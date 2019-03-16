@@ -49,9 +49,13 @@ License URL: https://STCServiciosDiaz
 
 /*** Background ***/
 .bg-d{
-	background-color: #dcab2e;
+	background-color: #dcab2e !important;
 }
-
 .bg-b{
 	background-color: #fff;
+}
+
+/*** Border color ***/
+.border-d{
+	border-color: #dcab2e !important;
 }

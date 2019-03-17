@@ -7,6 +7,11 @@ License: Creative Commons Luis Diaz
 License URL: https://STCServiciosDiaz
 */
 
+
+/**** General ****/
+.cursor-p { 
+	cursor: pointer;
+}
 /*** Tamaños de fuentes  ***/
 .fs-10 { font-size: 10px }
 .fs-11 { font-size: 11px }
@@ -58,4 +63,9 @@ License URL: https://STCServiciosDiaz
 /*** Border color ***/
 .border-d{
 	border-color: #dcab2e !important;
+}
+
+/***   ****/
+.pt-7{
+	padding-top: 1rem;
 }

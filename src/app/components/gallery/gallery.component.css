@@ -1,5 +1,18 @@
 /* SINGLE POST */
 
+
+.page {
+    display: none;
+  }
+.page-active {
+    display: block;
+}
+
+.page-link {
+	color: #dcab2e;
+    border: 1px solid #dcab2e;
+}
+
 .grid-item {
     display:inline-block;
     position:relative;

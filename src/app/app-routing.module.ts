@@ -9,6 +9,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import {AboutUsComponent} from './components/about-us/about-us.component';
+import {GoverningCouncilComponent} from './components/governing-council/governing-council.component';
+
 
 
 const appRoutes: Routes = [
@@ -19,6 +22,8 @@ const appRoutes: Routes = [
   { path: 'events', component: EventsComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'news', component: NewsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'governing-council', component: GoverningCouncilComponent },
   { path: 'contact', component: ContactComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }

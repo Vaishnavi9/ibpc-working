@@ -17,6 +17,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { HeaderComponent } from './components/header/header.component';
 //import { FooterComponent } from './components/footer/footer.component';
 import { FatFooterComponent } from './components/fat-footer/fat-footer.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { GoverningCouncilComponent } from './components/governing-council/governing-council.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { FatFooterComponent } from './components/fat-footer/fat-footer.component
     PageNotFoundComponent,
     HeaderComponent,
     //FooterComponent,
-    FatFooterComponent
+    FatFooterComponent,
+    AboutUsComponent,
+    GoverningCouncilComponent
   ],
   imports: [
     BrowserModule,

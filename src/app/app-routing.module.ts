@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChamberRegistrationComponent } from './components/chamber-registration/chamber-registration.component';
@@ -11,6 +12,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {AboutUsComponent} from './components/about-us/about-us.component';
 import {GoverningCouncilComponent} from './components/governing-council/governing-council.component';
+import { IndividualFormComponent } from './components/individual-form/individual-form.component';
+import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
 
 
 
@@ -25,6 +28,8 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'governing-council', component: GoverningCouncilComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'individual-form', component: IndividualFormComponent },
+  { path: 'corporate-form', component: CorporateFormComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

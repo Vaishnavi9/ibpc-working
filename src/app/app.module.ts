@@ -19,6 +19,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FatFooterComponent } from './components/fat-footer/fat-footer.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { GoverningCouncilComponent } from './components/governing-council/governing-council.component';
+import { IndividualFormComponent } from './components/individual-form/individual-form.component';
+import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { GoverningCouncilComponent } from './components/governing-council/govern
     //FooterComponent,
     FatFooterComponent,
     AboutUsComponent,
-    GoverningCouncilComponent
+    GoverningCouncilComponent,
+    IndividualFormComponent,
+    CorporateFormComponent
   ],
   imports: [
     BrowserModule,

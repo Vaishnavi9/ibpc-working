@@ -1,0 +1,9 @@
+.carousel-inner {
+    background: -webkit-linear-gradient(left, #000, #e0ac20);
+    background: -o-linear-gradient(left, #000, blue);
+    background: -moz-linear-gradient(left, #000, blue);
+    background: linear-gradient(to left, #000000c9, #dda928);
+}
+
+
+

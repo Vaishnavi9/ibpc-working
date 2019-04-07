@@ -21,7 +21,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { GoverningCouncilComponent } from './components/governing-council/governing-council.component';
 import { IndividualFormComponent } from './components/individual-form/individual-form.component';
 import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
-
+//import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,7 @@ import { CorporateFormComponent } from './components/corporate-form/corporate-fo
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  //providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

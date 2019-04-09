@@ -15,13 +15,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
-//import { FooterComponent } from './components/footer/footer.component';
 import { FatFooterComponent } from './components/fat-footer/fat-footer.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { GoverningCouncilComponent } from './components/governing-council/governing-council.component';
 import { IndividualFormComponent } from './components/individual-form/individual-form.component';
 import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
-//import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import { CorporateFormComponent } from './components/corporate-form/corporate-fo
     ContactComponent,
     PageNotFoundComponent,
     HeaderComponent,
-    //FooterComponent,
     FatFooterComponent,
     AboutUsComponent,
     GoverningCouncilComponent,
@@ -47,7 +45,7 @@ import { CorporateFormComponent } from './components/corporate-form/corporate-fo
     BrowserModule,
     AppRoutingModule
   ],
-  //providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

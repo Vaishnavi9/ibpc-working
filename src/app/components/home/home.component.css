@@ -21,29 +21,33 @@
 }
 
 .mask1{
-    background-image: url("assets/img/slider/slider1.png");
+    background-image: url("assets/img/slider/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    background-position-y:40%;
+    height: 70vh;
     
 }
 .mask2{
-    background-image: url("assets/img/slider/slider2.png");
+    background-image: url("assets/img/slider/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    background-position: center;    
+    height: 70vh;
 }
 .mask3{
-    background-image: url("assets/img/slider/slider3.png");
+    background-image: url("assets/img/slider/3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    background-position: center;    
+    height: 70vh;
 }
 .mask4{
-    background-image: url("assets/img/slider/slider4.png");
+    background-image: url("assets/img/slider/4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    background-position: center;    
+    height: 70vh;
 }
 
 .copule{

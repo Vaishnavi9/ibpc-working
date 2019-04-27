@@ -28,10 +28,11 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'governing-council', component: GoverningCouncilComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'page-not-found', component: PageNotFoundComponent },
+  
   { path: 'individual-form', component: IndividualFormComponent },
   { path: 'corporate-form', component: CorporateFormComponent },
-  { path: '**',   redirectTo: 'home', pathMatch: 'full' },
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

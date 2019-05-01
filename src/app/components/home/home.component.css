@@ -12,7 +12,14 @@
 .carousel{
 	z-index: -10000;
 }
-
+#prev{
+position: absolute;
+top:10px;
+}
+#next{
+    position: absolute;
+    top:10px;
+}
 .carousel-inner {
     background: -webkit-linear-gradient(left, #000, #e4bd5d);
     background: -o-linear-gradient(left, #000, blue);
@@ -21,11 +28,11 @@
 }
 
 .mask1{
-    background-image: url("assets/img/slider/1.jpg");
+    background-image: url("assets/img/slider/1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y:40%;
-    height: 70vh;
+    height: 80vh;
     
 }
 .mask2{
@@ -33,21 +40,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    height: 70vh;
+    height: 80vh;
 }
 .mask3{
     background-image: url("assets/img/slider/3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    height: 70vh;
+    height: 80vh;
+    font-weight:700;
 }
 .mask4{
     background-image: url("assets/img/slider/4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
-    height: 70vh;
+    height: 80vh;
+    font-weight:700;
 }
 
 .copule{

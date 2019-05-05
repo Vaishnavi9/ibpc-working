@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class GoverningCouncilComponent implements OnInit {
  
   filesScale1: any = [
-
     //President data
     {
     img:"assets/img/governing-council/president.jpg",
@@ -98,7 +97,7 @@ export class GoverningCouncilComponent implements OnInit {
     {
     img:"assets/img/governing-council/member3.jpg",
     name:"Mr. Saju Augustine",
-    position:"Senior Partner",
+    position:"Hon. Member",
     post:"Senior Manage",
     company:"Morison Menon CA",
     contact:"050-6317153",
@@ -108,7 +107,7 @@ export class GoverningCouncilComponent implements OnInit {
     {
     img:"assets/img/governing-council/member4.jpg",
     name:"Mr. Baby Thankachan",
-    position:"Senior Partner",
+    position:"Hon. Member",
     post:"MD",
     company:"Abusultan General Cleaning Services",
     contact:"050-4867889/ 07-2361813",
@@ -119,7 +118,7 @@ export class GoverningCouncilComponent implements OnInit {
     {
     img:"assets/img/governing-council/member5.jpg",
     name:"Mr. JRC Babu",
-    position:"Senior Partner",
+    position:"Hon. Member",
     post:"MD",
     company:"Al Jazaa Electrical & Sanitary ",
     contact:"050-6476642/ 07-2227970",
@@ -127,7 +126,6 @@ export class GoverningCouncilComponent implements OnInit {
     },
   ];
 
-  hide:boolean=true;
   constructor() { }
 
   ngOnInit() {

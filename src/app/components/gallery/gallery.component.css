@@ -1,5 +1,27 @@
 /* SINGLE POST */
 
+/* /deep/ .ngx-gallery-thumbnail.ngx-gallery-active {  
+    border-radius: 50%;
+}
+/deep/.ngx-gallery-thumbnail.ngx-gallery-clickable{
+    border-radius: 50%;
+} */
+     
+.abc {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+
+.slider-wrapper {
+    width: 50%;
+  }
+  
+  span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-ceil {
+    left: 100% !important;
+  }
+  
 .page {
     display: none;
 }

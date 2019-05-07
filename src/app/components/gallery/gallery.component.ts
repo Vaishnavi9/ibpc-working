@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 @Component({
@@ -524,3 +525,4 @@ export class GalleryComponent implements OnInit {
     ];
   }
 }
+

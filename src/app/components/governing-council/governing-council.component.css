@@ -27,7 +27,7 @@ body {
 }
 .section .card .header {
     height: 150px;
-    background: #7f00ff;
+    background: #dda928;
 }
 .section .card .header .main-position{
    text-align: center;
@@ -63,7 +63,7 @@ body {
 }
 .section .card .card-body .user-meta .position {
     font-size: 90%;
-    color: #7f00ff;
+    color: #dda928;
 }
 .section .card .user-bio {
     padding-top: 8px;

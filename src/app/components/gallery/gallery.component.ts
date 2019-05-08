@@ -20,6 +20,12 @@ export class GalleryComponent implements OnInit {
     showEventFive:boolean;
     showEventSix:boolean;
     showAll:boolean;
+     showEventSeven:boolean;
+        showEventEight:boolean;
+        showEventNine:boolean;
+        showEventTen:boolean;
+        showEventEleven:boolean;
+        showEventtwelve:boolean;
     constructor() {
       
     }
@@ -35,6 +41,11 @@ export class GalleryComponent implements OnInit {
   event6: NgxGalleryImage[];
   event7: NgxGalleryImage[];
   event8: NgxGalleryImage[];
+  event9: NgxGalleryImage[];
+  event10: NgxGalleryImage[];
+  event11: NgxGalleryImage[];
+  event12: NgxGalleryImage[];
+
   // showAll(){
   //   console.log("show all");
   //   this.showAllImg=true;
@@ -60,6 +71,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=false;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
       }
       
       else if(this.eventsData==1){
@@ -70,6 +87,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=false;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
 
       }
       else if(this.eventsData==2){
@@ -80,6 +103,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=false;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
       }
       else if(this.eventsData==3){
         this.showAll=false;
@@ -89,6 +118,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=false;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
       }
       
       else if(this.eventsData==4){
@@ -99,6 +134,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=true;
         this.showEventFive=false;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
       }
       
       else if(this.eventsData==5){
@@ -109,6 +150,12 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=true;
         this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
       }
       
       else if(this.eventsData==6){
@@ -119,6 +166,109 @@ export class GalleryComponent implements OnInit {
         this.showEventFour=false;
         this.showEventFive=false;
         this.showEventSix=true;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
+      }
+
+      else if(this.eventsData==7){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSix=true;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
+
+      }
+      else if(this.eventsData==8){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=true;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
+      }
+      else if(this.eventsData==9){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=true;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
+      }
+      
+      else if(this.eventsData==10){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=true;
+        this.showEventEleven=false;
+        this.showEventtwelve=false;
+      }
+      
+      else if(this.eventsData==11){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=true;
+        this.showEventtwelve=false;
+      }
+      
+      else if(this.eventsData==12){
+        this.showAll=false;
+        this.showEventOne=false;
+        this.showEventTwo=false;
+        this.showEventThree=false;
+        this.showEventFour=false;
+        this.showEventFive=false;
+        this.showEventSix=false;
+        this.showEventSeven=false;
+        this.showEventEight=false;
+        this.showEventNine=false;
+        this.showEventTen=false;
+        this.showEventEleven=false;
+        this.showEventtwelve=true;
+        console.log(this.showEventtwelve);
       }
       
       else{
@@ -521,6 +671,34 @@ export class GalleryComponent implements OnInit {
         small: 'assets/img/gallery-page/IMG_5911.jpg',
         medium: 'assets/img/gallery-page/IMG_5911.jpg',
         big: 'assets/img/gallery-page/IMG_5911.jpg'
+      }
+    ];
+
+    this.event12 = [
+      {
+        small: 'assets/img/events/Kizad/2.JPG',
+        medium: 'assets/img/events/Kizad/2.JPG',
+        big: 'assets/img/events/Kizad/2.JPG'
+      },
+      {
+        small: 'assets/img/events/Kizad/5.JPG',
+        medium: 'assets/img/events/Kizad/5.JPG',
+        big: 'assets/img/events/Kizad/5.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/6.JPG',
+        medium: 'assets/img/events/Kizad/6.JPG',
+        big: 'assets/img/events/Kizad/6.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/8.JPG',
+        medium: 'assets/img/events/Kizad/8.JPG',
+        big: 'assets/img/events/Kizad/8.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/9.JPG',
+        medium: 'assets/img/events/Kizad/9.JPG',
+        big: 'assets/img/events/Kizad/9.JPG',
       }
     ];
   }

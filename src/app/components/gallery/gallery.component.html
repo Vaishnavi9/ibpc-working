@@ -32,13 +32,13 @@
  <div class="container">
    <div class="row">
      <div class=col-sm-9>
-       <h1>{{eventName}}</h1>
+       <!-- <h1>{{eventName}}</h1> -->
      </div>
      <div class=col-sm-3>
 
        <label for="sel1">Select Event:</label>
        <select [(ngModel)]='eventsData' (click)="selectEvent()"> select event
-         <option value="0" selected>All</option>
+         <option value="0" selectedn >All</option>
          <option value="1"> Business event 2013</option>
          <option value="2"> Business event 2015</option>
          <option value="3"> Brics 2015</option>
@@ -52,16 +52,11 @@
          <option value="11">VAT Return & Compliance</option>
          <option value="12">Kizod</option>
        </select>
-       <!-- <button type="button" class="btn btn-warning" (click)="showAll()">all</button>
-           <button type="button" class="btn btn-warning" (click)="showNews()">news</button>
-           <button type="button" class="btn btn-warning" (click)="showgallery()">Gallery</button> -->
-
      </div>
    </div>
  </div>
 
  <div *ngIf="showAll">
-
    <ngx-gallery [options]="galleryOptionsAll" [images]="allevents"></ngx-gallery>
  </div>
 

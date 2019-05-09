@@ -12,14 +12,14 @@ export class GalleryComponent implements OnInit {
   flexImageSize: number = 7
   galleryName: string = ''
   showAllImg: any;
-  eventsData: any;
+  eventsData: any=0;
   showEventOne: boolean;
   showEventTwo: boolean;
   showEventThree: boolean;
   showEventFour: boolean;
   showEventFive: boolean;
   showEventSix: boolean;
-  showAll: boolean;
+  showAll: boolean=true;
   showEventSeven: boolean;
   showEventEight: boolean;
   showEventNine: boolean;
@@ -184,8 +184,7 @@ export class GalleryComponent implements OnInit {
       this.showEventFour = false;
       this.showEventFive = false;
       this.showEventSix = false;
-      this.showEventSix = true;
-      this.showEventSeven = false;
+      this.showEventSeven = true;
       this.showEventEight = false;
       this.showEventNine = false;
       this.showEventTen = false;
@@ -324,7 +323,7 @@ export class GalleryComponent implements OnInit {
       {
         breakpoint: 800,
         width: '100%',
-        height: '600px',
+        height: '400px',
         imagePercent: 80,
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,
@@ -343,8 +342,8 @@ export class GalleryComponent implements OnInit {
         image: false,
         thumbnailsMargin: 30,
         previewSwipe: true,
-        thumbnailsColumns: 3,
-        thumbnailsRows: 6,
+        thumbnailsColumns: 5,
+        thumbnailsRows: 4,
         imageAnimation: NgxGalleryAnimation.Slide
       },
       // max-width 800
@@ -365,12 +364,358 @@ export class GalleryComponent implements OnInit {
     ];
 
 
+    
+
+    this.allevents = [
+
+      //event 1
+
+      {
+        small: 'assets/img/events/BS-2013/1.jpg',
+        medium: 'assets/img/events/BS-2013/1.jpg',
+        big: 'assets/img/events/BS-2013/1.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2013/2.jpg',
+        medium: 'assets/img/events/BS-2013/2.jpg',
+        big: 'assets/img/events/BS-2013/2.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2013/3.jpg',
+        medium: 'assets/img/events/BS-2013/3.jpg',
+        big: 'assets/img/events/BS-2013/3.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2013/4.jpg',
+        medium: 'assets/img/events/BS-2013/4.jpg',
+        big: 'assets/img/events/BS-2013/1.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2013/5.jpg',
+        medium: 'assets/img/events/BS-2013/5.jpg',
+        big: 'assets/img/events/BS-2013/5.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2013/6.jpg',
+        medium: 'assets/img/events/BS-2013/6.jpg',
+        big: 'assets/img/events/BS-2013/6.jpg',
+      },
+
+      //event 2
+
+      {
+        small: 'assets/img/events/BE-2015/1.JPG',
+        medium: 'assets/img/events/BE-2015/1.JPG',
+        big: 'assets/img/events/BE-2015/1.JPG',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/BE-2015/2.JPG',
+        medium: 'assets/img/events/BE-2015/2.JPG',
+        big: 'assets/img/events/BE-2015/2.JPG',
+      },
+      {
+        small: 'assets/img/events/BE-2015/3.JPG',
+        medium: 'assets/img/events/BE-2015/3.JPG',
+        big: 'assets/img/events/BE-2015/3.JPG',
+      },
+      {
+        small: 'assets/img/events/BE-2015/4.JPG',
+        medium: 'assets/img/events/BE-2015/4.JPG',
+        big: 'assets/img/events/BE-2015/4.JPG',
+      },
+      {
+        small: 'assets/img/events/BE-2015/5.JPG',
+        medium: 'assets/img/events/BE-2015/5.JPG',
+        big: 'assets/img/events/BE-2015/5.JPG',
+      },
+
+      //event 3
+
+      {
+        small: 'assets/img/events/BRICKS2015/1.jpg',
+        medium: 'assets/img/events/BRICKS2015/1.jpg',
+        big: 'assets/img/events/BRICKS2015/1.jpg',
+      },
+      {
+        small: 'assets/img/events/BRICKS2015/2.jpg',
+        medium: 'assets/img/events/BRICKS2015/2.jpg',
+        big: 'assets/img/events/BRICKS2015/2.jpg',
+      },
+      {
+        small: 'assets/img/events/BRICKS2015/3.jpg',
+        medium: 'assets/img/events/BRICKS2015/3.jpg',
+        big: 'assets/img/events/BRICKS2015/3.jpg'
+      },
+      {
+        small: 'assets/img/events/BRICKS2015/4.jpg',
+        medium: 'assets/img/events/BRICKS2015/4.jpg',
+        big: 'assets/img/events/BRICKS2015/4.jpg'
+      },
+      {
+        small: 'assets/img/events/BRICKS2015/5.jpg',
+        medium: 'assets/img/events/BRICKS2015/5.jpg',
+        big: 'assets/img/events/BRICKS2015/5.jpg'
+      },
+      {
+        small: 'assets/img/events/BRICKS2015/6.jpg',
+        medium: 'assets/img/events/BRICKS2015/6.jpg',
+        big: 'assets/img/events/BRICKS2015/6.jpg'
+      },
+      //event 4
+      {
+        small: 'assets/img/events/iftar-15/1.jpg',
+        medium: 'assets/img/events/iftar-15/1.jpg',
+        big: 'assets/img/events/iftar-15/1.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/iftar-15/2.jpg',
+        medium: 'assets/img/events/iftar-15/2.jpg',
+        big: 'assets/img/events/iftar-15/2.jpg'
+      },
+      {
+        small: 'assets/img/events/iftar-15/3.jpg',
+        medium: 'assets/img/events/iftar-15/3.jpg',
+        big: 'assets/img/events/iftar-15/3.jpg'
+      },
+      {
+        small: 'assets/img/events/iftar-15/4.jpg',
+        medium: 'assets/img/events/iftar-15/4.jpg',
+        big: 'assets/img/events/iftar-15/4.jpg'
+      },
+      {
+        small: 'assets/img/events/iftar-15/5.jpg',
+        medium: 'assets/img/events/iftar-15/5.jpg',
+        big: 'assets/img/events/iftar-15/5.jpg'
+      },
+
+      //event 5
+      {
+        small: 'assets/img/events/iftar-17/1.jpg',
+        medium: 'assets/img/events/iftar-17/1.jpg',
+        big: 'assets/img/events/iftar-17/1.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/2.jpg',
+        medium: 'assets/img/events/iftar-17/2.jpg',
+        big: 'assets/img/events/iftar-17/2.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/3.jpg',
+        medium: 'assets/img/events/iftar-17/3.jpg',
+        big: 'assets/img/events/iftar-17/3.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/4.jpg',
+        medium: 'assets/img/events/iftar-17/4.jpg',
+        big: 'assets/img/events/iftar-17/4.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/5.jpg',
+        medium: 'assets/img/events/iftar-17/5.jpg',
+        big: 'assets/img/events/iftar-17/5.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/6.jpg',
+        medium: 'assets/img/events/iftar-17/6.jpg',
+        big: 'assets/img/events/iftar-17/6.jpg',
+      },
+      {
+        small: 'assets/img/events/iftar-17/7.jpg',
+        medium: 'assets/img/events/iftar-17/7.jpg',
+        big: 'assets/img/events/iftar-17/7.jpg',
+      },
+
+      //event 6
+
+      {
+        small: 'assets/img/events/money/1.jpg',
+        medium: 'assets/img/events/money/1.jpg',
+        big: 'assets/img/events/money/1.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/money/2.jpg',
+        medium: 'assets/img/events/money/2.jpg',
+        big: 'assets/img/events/money/2.jpg',
+      },
+      {
+        small: 'assets/img/events/money/3.jpg',
+        medium: 'assets/img/events/money/3.jpg',
+        big: 'assets/img/events/money/3.jpg',
+      },
+      {
+
+        small: 'assets/img/events/money/4.jpg',
+        medium: 'assets/img/events/money/4.jpg',
+        big: 'assets/img/events/money/4.jpg',
+      },
+      {
+        small: 'assets/img/events/money/5.jpg',
+        medium: 'assets/img/events/money/5.jpg',
+        big: 'assets/img/events/money/5.jpg',
+      },
+      // event 7
+      {
+        small: 'assets/img/events/BS-2017/1.jpg',
+        medium: 'assets/img/events/BS-2017/1.jpg',
+        big: 'assets/img/events/BS-2017/1.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/BS-2017/2.jpg',
+        medium: 'assets/img/events/BS-2017/2.jpg',
+        big: 'assets/img/events/BS-2017/2.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2017/3.jpg',
+        medium: 'assets/img/events/BS-2017/3.jpg',
+        big: 'assets/img/events/BS-2017/3.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2017/4.jpg',
+        medium: 'assets/img/events/BS-2017/4.jpg',
+        big: 'assets/img/events/BS-2017/4.jpg',
+      },
+      {
+        small: 'assets/img/events/BS-2017/5.jpg',
+        medium: 'assets/img/events/BS-2017/5.jpg',
+        big: 'assets/img/events/BS-2017/5.jpg',
+      },
+      //event 8
+      {
+        small: 'assets/img/events/meeting-with-dg/1.jpg',
+        medium: 'assets/img/events/meeting-with-dg/1.jpg',
+        big: 'assets/img/events/meeting-with-dg/1.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/meeting-with-dg/2.jpg',
+        medium: 'assets/img/events/meeting-with-dg/2.jpg',
+        big: 'assets/img/events/meeting-with-dg/2.jpg',
+      },
+      {
+        small: 'assets/img/events/meeting-with-dg/3.jpg',
+        medium: 'assets/img/events/meeting-with-dg/3.jpg',
+        big: 'assets/img/events/meeting-with-dg/3.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/meeting-with-dg/4.jpg',
+        medium: 'assets/img/events/meeting-with-dg/4.jpg',
+        big: 'assets/img/events/meeting-with-dg/4.jpg',
+      },
+      //event 9
+      {
+        small: 'assets/img/events/get-together-2013/1.jpg',
+        medium: 'assets/img/events/get-together-2013/1.jpg',
+        big: 'assets/img/events/get-together-2013/1.jpg',
+      },
+      {
+        small: 'assets/img/events/get-together-2013/2.jpg',
+        medium: 'assets/img/events/get-together-2013/2.jpg',
+        big: 'assets/img/events/get-together-2013/2.jpg',
+      },
+      {
+        small: 'assets/img/events/get-together-2013/3.jpg',
+        medium: 'assets/img/events/get-together-2013/3.jpg',
+        big: 'assets/img/events/get-together-2013/3.jpg',
+      },
+      {
+        small: 'assets/img/events/get-together-2013/4.jpg',
+        medium: 'assets/img/events/get-together-2013/4.jpg',
+        big: 'assets/img/events/get-together-2013/4.jpg',
+      },
+      {
+        small: 'assets/img/events/get-together-2013/5.jpg',
+        medium: 'assets/img/events/get-together-2013/5.jpg',
+        big: 'assets/img/events/get-together-2013/5.jpg',
+      },
+      {
+        small: 'assets/img/events/get-together-2013/6.jpg',
+        medium: 'assets/img/events/get-together-2013/6.jpg',
+        big: 'assets/img/events/get-together-2013/6.jpg',
+      },
+      //event 10
+      {
+        small: 'assets/img/events/vat-clinic-2017/1.jpg',
+        medium: 'assets/img/events/vat-clinic-2017/1.jpg',
+        big: 'assets/img/events/vat-clinic-2017/1.jpg',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/vat-clinic-2017/2.jpg',
+        medium: 'assets/img/events/vat-clinic-2017/2.jpg',
+        big: 'assets/img/events/vat-clinic-2017/2.jpg',
+      },
+
+      {
+        small: 'assets/img/events/vat-clinic-2017/3.jpg',
+        medium: 'assets/img/events/vat-clinic-2017/3.jpg',
+        big: 'assets/img/events/vat-clinic-2017/3.jpg',
+      },
+      {
+
+        small: 'assets/img/events/vat-clinic-2017/4.jpg',
+        medium: 'assets/img/events/vat-clinic-2017/4.jpg',
+        big: 'assets/img/events/vat-clinic-2017/4.jpg',
+      },
+       //event 11
+       {
+        small: 'assets/img/events/vat-r&c/1.JPG',
+        medium: 'assets/img/events/vat-r&c/1.JPG',
+        big: 'assets/img/events/vat-r&c/1.JPG',
+        description: ''
+      },
+      {
+        small: 'assets/img/events/vat-r&c/2.JPG',
+        medium: 'assets/img/events/vat-r&c/2.JPG',
+        big: 'assets/img/events/vat-r&c/2.JPG',
+      },
+      {
+        small: 'assets/img/events/vat-r&c/3.jpg',
+        medium: 'assets/img/events/vat-r&c/3.jpg',
+        big: 'assets/img/events/vat-r&c/3.jpg',
+      },
+      {
+        small: 'assets/img/events/vat-r&c/4.jpg',
+        medium: 'assets/img/events/vat-r&c/4.jpg',
+        big: 'assets/img/events/vat-r&c/4.jpg',
+      },
+      //event 12
+      {
+        small: 'assets/img/events/Kizad/1.JPG',
+        medium: 'assets/img/events/Kizad/1.JPG',
+        big: 'assets/img/events/Kizad/1.JPG'
+      },
+      {
+        small: 'assets/img/events/Kizad/2.JPG',
+        medium: 'assets/img/events/Kizad/2.JPG',
+        big: 'assets/img/events/Kizad/2.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/3.JPG',
+        medium: 'assets/img/events/Kizad/3.JPG',
+        big: 'assets/img/events/Kizad/3.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/4.JPG',
+        medium: 'assets/img/events/Kizad/4.JPG',
+        big: 'assets/img/events/Kizad/4.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/5.JPG',
+        medium: 'assets/img/events/Kizad/5.JPG',
+        big: 'assets/img/events/Kizad/5.JPG',
+      }
+    ];
+
     this.event1 = [
       {
         small: 'assets/img/events/BS-2013/1.jpg',
         medium: 'assets/img/events/BS-2013/1.jpg',
         big: 'assets/img/events/BS-2013/1.jpg',
-        description: ''
       },
       {
         small: 'assets/img/events/BS-2013/2.jpg',
@@ -397,190 +742,6 @@ export class GalleryComponent implements OnInit {
         medium: 'assets/img/events/BS-2013/6.jpg',
         big: 'assets/img/events/BS-2013/6.jpg',
       }
-    ];
-
-    this.allevents = [
-      // {
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg',
-      //   description: ''
-      // },
-      // {
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-
-      // {
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg',
-      //   description: ''
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg',
-      //   description: ''
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg',
-      //   description: ''
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // },
-      // {
-
-      //   small: 'assets/img/events/BS-2013/6.jpg',
-      //   medium: 'assets/img/events/BS-2013/6.jpg',
-      //   big: 'assets/img/events/BS-2013/6.jpg'
-      // }
-
     ];
 
     this.event2 = [
@@ -659,7 +820,6 @@ export class GalleryComponent implements OnInit {
 
     this.event5 = [
       {
-
         small: 'assets/img/events/iftar-17/1.jpg',
         medium: 'assets/img/events/iftar-17/1.jpg',
         big: 'assets/img/events/iftar-17/1.jpg',
@@ -706,7 +866,6 @@ export class GalleryComponent implements OnInit {
 
     this.event4 = [
       {
-
         small: 'assets/img/events/iftar-15/1.jpg',
         medium: 'assets/img/events/iftar-15/1.jpg',
         big: 'assets/img/events/iftar-15/1.jpg',
@@ -743,7 +902,6 @@ export class GalleryComponent implements OnInit {
     ];
     this.event6 = [
       {
-
         small: 'assets/img/events/money/1.jpg',
         medium: 'assets/img/events/money/1.jpg',
         big: 'assets/img/events/money/1.jpg',
@@ -767,8 +925,6 @@ export class GalleryComponent implements OnInit {
         big: 'assets/img/events/money/4.jpg',
       },
       {
-
-
         small: 'assets/img/events/money/5.jpg',
         medium: 'assets/img/events/money/5.jpg',
         big: 'assets/img/events/money/5.jpg',
@@ -777,7 +933,6 @@ export class GalleryComponent implements OnInit {
     ];
     this.event7 = [
       {
-
         small: 'assets/img/events/BS-2017/1.jpg',
         medium: 'assets/img/events/BS-2017/1.jpg',
         big: 'assets/img/events/BS-2017/1.jpg',
@@ -808,90 +963,63 @@ export class GalleryComponent implements OnInit {
     ];
     this.event8 = [
       {
-
-        small: 'assets/img/events/vat-clinic-2017/1.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/1.jpg',
-        big: 'assets/img/events/vat-clinic-2017/1.jpg',
+        small: 'assets/img/events/meeting-with-dg/1.jpg',
+        medium: 'assets/img/events/meeting-with-dg/1.jpg',
+        big: 'assets/img/events/meeting-with-dg/1.jpg',
         description: ''
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/2.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/2.jpg',
-        big: 'assets/img/events/vat-clinic-2017/2.jpg',
+        small: 'assets/img/events/meeting-with-dg/2.jpg',
+        medium: 'assets/img/events/meeting-with-dg/2.jpg',
+        big: 'assets/img/events/meeting-with-dg/2.jpg',
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/6.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/6.jpg',
-        big: 'assets/img/events/vat-clinic-2017/6.jpg',
+        small: 'assets/img/events/meeting-with-dg/3.jpg',
+        medium: 'assets/img/events/meeting-with-dg/3.jpg',
+        big: 'assets/img/events/meeting-with-dg/3.jpg',
+        description: ''
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/3.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/3.jpg',
-        big: 'assets/img/events/vat-clinic-2017/3.jpg',
-      },
-      {
-
-        small: 'assets/img/events/vat-clinic-2017/4.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/4.jpg',
-        big: 'assets/img/events/vat-clinic-2017/4.jpg',
-      },
-      {
-
-        small: 'assets/img/events/vat-clinic-2017/5.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/5.jpg',
-        big: 'assets/img/events/vat-clinic-2017/5.jpg',
-      },
-      {
-        small: 'assets/img/events/vat-clinic-2017/6.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/6.jpg',
-        big: 'assets/img/events/vat-clinic-2017/6.jpg',
+        small: 'assets/img/events/meeting-with-dg/4.jpg',
+        medium: 'assets/img/events/meeting-with-dg/4.jpg',
+        big: 'assets/img/events/meeting-with-dg/4.jpg',
       }
     ];
     this.event9 = [
       {
-
-        small: 'assets/img/events/vat-clinic-2017/1.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/1.jpg',
-        big: 'assets/img/events/vat-clinic-2017/1.jpg',
-        description: ''
+        small: 'assets/img/events/get-together-2013/1.jpg',
+        medium: 'assets/img/events/get-together-2013/1.jpg',
+        big: 'assets/img/events/get-together-2013/1.jpg',
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/2.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/2.jpg',
-        big: 'assets/img/events/vat-clinic-2017/2.jpg',
+        small: 'assets/img/events/get-together-2013/2.jpg',
+        medium: 'assets/img/events/get-together-2013/2.jpg',
+        big: 'assets/img/events/get-together-2013/2.jpg',
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/6.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/6.jpg',
-        big: 'assets/img/events/vat-clinic-2017/6.jpg',
+        small: 'assets/img/events/get-together-2013/3.jpg',
+        medium: 'assets/img/events/get-together-2013/3.jpg',
+        big: 'assets/img/events/get-together-2013/3.jpg',
       },
       {
-        small: 'assets/img/events/vat-clinic-2017/3.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/3.jpg',
-        big: 'assets/img/events/vat-clinic-2017/3.jpg',
+        small: 'assets/img/events/get-together-2013/4.jpg',
+        medium: 'assets/img/events/get-together-2013/4.jpg',
+        big: 'assets/img/events/get-together-2013/4.jpg',
       },
       {
-
-        small: 'assets/img/events/vat-clinic-2017/4.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/4.jpg',
-        big: 'assets/img/events/vat-clinic-2017/4.jpg',
+        small: 'assets/img/events/get-together-2013/5.jpg',
+        medium: 'assets/img/events/get-together-2013/5.jpg',
+        big: 'assets/img/events/get-together-2013/5.jpg',
       },
       {
-
-        small: 'assets/img/events/vat-clinic-2017/5.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/5.jpg',
-        big: 'assets/img/events/vat-clinic-2017/5.jpg',
+        small: 'assets/img/events/get-together-2013/6.jpg',
+        medium: 'assets/img/events/get-together-2013/6.jpg',
+        big: 'assets/img/events/get-together-2013/6.jpg',
       },
-      {
-        small: 'assets/img/events/vat-clinic-2017/6.jpg',
-        medium: 'assets/img/events/vat-clinic-2017/6.jpg',
-        big: 'assets/img/events/vat-clinic-2017/6.jpg',
-      }
     ];
 
     this.event11 = [
       {
-
         small: 'assets/img/events/vat-r&c/1.JPG',
         medium: 'assets/img/events/vat-r&c/1.JPG',
         big: 'assets/img/events/vat-r&c/1.JPG',
@@ -916,7 +1044,6 @@ export class GalleryComponent implements OnInit {
     ];
     this.event10 = [
       {
-
         small: 'assets/img/events/vat-clinic-2017/1.jpg',
         medium: 'assets/img/events/vat-clinic-2017/1.jpg',
         big: 'assets/img/events/vat-clinic-2017/1.jpg',
@@ -944,29 +1071,29 @@ export class GalleryComponent implements OnInit {
 
     this.event12 = [
       {
+        small: 'assets/img/events/Kizad/1.JPG',
+        medium: 'assets/img/events/Kizad/1.JPG',
+        big: 'assets/img/events/Kizad/1.JPG'
+      },
+      {
         small: 'assets/img/events/Kizad/2.JPG',
         medium: 'assets/img/events/Kizad/2.JPG',
-        big: 'assets/img/events/Kizad/2.JPG'
+        big: 'assets/img/events/Kizad/2.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/3.JPG',
+        medium: 'assets/img/events/Kizad/3.JPG',
+        big: 'assets/img/events/Kizad/3.JPG',
+      },
+      {
+        small: 'assets/img/events/Kizad/4.JPG',
+        medium: 'assets/img/events/Kizad/4.JPG',
+        big: 'assets/img/events/Kizad/4.JPG',
       },
       {
         small: 'assets/img/events/Kizad/5.JPG',
         medium: 'assets/img/events/Kizad/5.JPG',
         big: 'assets/img/events/Kizad/5.JPG',
-      },
-      {
-        small: 'assets/img/events/Kizad/6.JPG',
-        medium: 'assets/img/events/Kizad/6.JPG',
-        big: 'assets/img/events/Kizad/6.JPG',
-      },
-      {
-        small: 'assets/img/events/Kizad/8.JPG',
-        medium: 'assets/img/events/Kizad/8.JPG',
-        big: 'assets/img/events/Kizad/8.JPG',
-      },
-      {
-        small: 'assets/img/events/Kizad/9.JPG',
-        medium: 'assets/img/events/Kizad/9.JPG',
-        big: 'assets/img/events/Kizad/9.JPG',
       }
     ];
   }

@@ -30,30 +30,21 @@
         </ul>
     </div> -->
  <div class="container">
-   <div class="row">
-     <div class=col-sm-9>
-       <!-- <h1>{{eventName}}</h1> -->
+    
+   <form class="form-inline">
+     <div class="row">
+      
+       <div class="form-group ">
+          <div class="col-sm-4"></div>
+         <label for="sel1" class="col-sm-4 control-label">Select Event:</label>
+         <div class="col-sm-4">
+           <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
+             <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
+           </select>
+         </div>
+       </div>
      </div>
-     <div class=col-sm-3>
-
-       <label for="sel1">Select Event:</label>
-       <select [(ngModel)]='eventsData' (click)="selectEvent()"> select event
-         <option value="0" selectedn >All</option>
-         <option value="1"> Business event 2013</option>
-         <option value="2"> Business event 2015</option>
-         <option value="3"> Brics 2015</option>
-         <option value="4"> IFTAR 2015</option>
-         <option value="5"> IFTAR 2017</option>
-         <option value="6"> Money </option>
-         <option value="7">Business event 2017</option>
-         <option value="8">Meeting with DG</option>
-         <option value="9">Get together 2013</option>
-         <option value="10">VAT clint 2017</option>
-         <option value="11">VAT Return & Compliance</option>
-         <option value="12">Kizod</option>
-       </select>
-     </div>
-   </div>
+   </form>
  </div>
 
  <div *ngIf="showAll">
@@ -61,7 +52,7 @@
  </div>
 
  <div *ngIf="showEventOne">
-   
+
    <ngx-gallery [options]="galleryOptions" [images]="event1"></ngx-gallery>
  </div>
 

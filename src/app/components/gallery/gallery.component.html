@@ -30,21 +30,21 @@
         </ul>
     </div> -->
  <div class="container">
-    
-   <form class="form-inline">
-     <div class="row">
-      
-       <div class="form-group ">
-          <div class="col-sm-4"></div>
-         <label for="sel1" class="col-sm-4 control-label">Select Event:</label>
-         <div class="col-sm-4">
-           <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
-             <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
-           </select>
-         </div>
-       </div>
+
+   <!-- <form class="form-inline"> -->
+   <div class="row">
+
+     <div class="form-group ">
+       <!-- <div class="col-sm-4"></div> -->
+       <label for="sel1" class="col-sm-8 control-label">Select Event:</label>
+       <!-- <div class="col-sm-4"> -->
+       <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
+         <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
+       </select>
+       <!-- </div> -->
      </div>
-   </form>
+   </div>
+   <!-- </form> -->
  </div>
 
  <div *ngIf="showAll">

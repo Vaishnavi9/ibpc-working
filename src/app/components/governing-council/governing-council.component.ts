@@ -94,15 +94,15 @@ export class GoverningCouncilComponent implements OnInit {
     email:"rajeevsreeragam@gmail.com"
     },
     // {img:"assets/img/governing-council/member3.jpg"},
-    {
-    img:"assets/img/governing-council/member3.jpg",
-    name:"Mr. Saju Augustine",
-    position:"Hon. Member",
-    post:"Senior Manage",
-    company:"Morison Menon CA",
-    contact:"050-6317153",
-    email:" saju@morisonmenon.com"
-    },
+    // {
+    // img:"assets/img/governing-council/member3.jpg",
+    // name:"Mr. Saju Augustine",
+    // position:"Hon. Member",
+    // post:"Senior Manage",
+    // company:"Morison Menon CA",
+    // contact:"050-6317153",
+    // email:" saju@morisonmenon.com"
+    // },
     // {img:"assets/img/governing-council/member4.jpg"},
     {
     img:"assets/img/governing-council/member4.jpg",

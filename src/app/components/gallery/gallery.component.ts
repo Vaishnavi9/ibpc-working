@@ -6,6 +6,7 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
+
 export class GalleryComponent implements OnInit {
 
   flexBorderSize: number = 3
@@ -30,7 +31,7 @@ export class GalleryComponent implements OnInit {
 
   }
 
-
+  
   galleryOptions: NgxGalleryOptions[];
   galleryOptionsAll: NgxGalleryOptions[];
   allevents: NgxGalleryImage[];
@@ -297,6 +298,7 @@ selectEvent() {
 }
 
 ngOnInit(): void {
+  window.scrollTo(0, 0);
   // this.galleryOptions = [
   //   {
   //     thumbnails: true,
@@ -1114,5 +1116,7 @@ ngOnInit(): void {
     }
   ];
 }
+
 }
+
 

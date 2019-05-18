@@ -27,6 +27,7 @@ export class GalleryComponent implements OnInit {
   showEventTen: boolean;
   showEventEleven: boolean;
   showEventtwelve: boolean;
+  EventHeader:string="All";
   constructor() {
 
   }
@@ -85,6 +86,7 @@ selectEvent() {
   console.log(this.eventsData);
   if (this.eventsData == 0) {
     this.showAll = true;
+    this.EventHeader="All";
     this.showEventOne = false;
     this.showEventTwo = false;
     this.showEventThree = false;
@@ -100,6 +102,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 1) {
+    this.EventHeader="Business event 2013";
     this.showAll = false;
     this.showEventOne = true;
     this.showEventTwo = false;
@@ -116,6 +119,7 @@ selectEvent() {
 
   }
   else if (this.eventsData == 2) {
+    this.EventHeader="Business event 2015";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = true;
@@ -131,6 +135,7 @@ selectEvent() {
     this.showEventtwelve = false;
   }
   else if (this.eventsData == 3) {
+    this.EventHeader="Brics 2015";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -147,6 +152,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 4) {
+    this.EventHeader="IFTAR 2015";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -163,6 +169,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 5) {
+    this.EventHeader="IFTAR 2017";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -179,6 +186,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 6) {
+    this.EventHeader="Money";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -195,6 +203,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 7) {
+    this.EventHeader="Business event 2017";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -211,6 +220,7 @@ selectEvent() {
 
   }
   else if (this.eventsData == 8) {
+    this.EventHeader="Meeting with DG";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -226,6 +236,7 @@ selectEvent() {
     this.showEventtwelve = false;
   }
   else if (this.eventsData == 9) {
+    this.EventHeader="Get together 2013";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -242,6 +253,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 10) {
+    this.EventHeader="VAT clint 2017";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -258,6 +270,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 11) {
+    this.EventHeader="VAT Return & Compliance";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;
@@ -274,6 +287,7 @@ selectEvent() {
   }
 
   else if (this.eventsData == 12) {
+    this.EventHeader="Kizod";
     this.showAll = false;
     this.showEventOne = false;
     this.showEventTwo = false;

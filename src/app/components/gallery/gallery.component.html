@@ -32,17 +32,26 @@
  <div class="eventheaderSection">
    <div class="container">
      <div class="row">
+        <div class="col-sm-4" style=" margin-top: 7px;">
+            <label class="control-label"><h1>{{EventHeader}}</h1></label>
+        </div>
+         <div class="col-sm-3" style=" margin-top: 7px;">
+          
+        </div>
        <div class="col-sm-1" style=" margin-top: 7px;">
          <label for="sel1" class="control-label">Select Event:</label>
        </div>
+       <div class="col-sm-3" style=" margin-top: 7px;">
        <div class="form-group ">
          <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
            <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
          </select>
        </div>
+      </div>
+       </div>
      </div>
    </div>
- </div>
+ 
 
 
  <div *ngIf="showAll">

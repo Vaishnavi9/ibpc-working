@@ -32,74 +32,78 @@
  <div class="eventheaderSection">
    <div class="container">
      <div class="row">
-        <div class="col-sm-4" style=" margin-top: 7px;">
-            <label class="control-label"><h1>{{EventHeader}}</h1></label>
-        </div>
-         <div class="col-sm-3" style=" margin-top: 7px;">
-          
-        </div>
-       <div class="col-sm-1" style=" margin-top: 7px;">
-         <label for="sel1" class="control-label">Select Event:</label>
+       <div class="col-sm-4" style=" margin-top: 7px;">
+         <label class="control-label" style="color: #DAA520;">
+           <h1>{{EventHeader}}</h1>
+         </label>
        </div>
        <div class="col-sm-3" style=" margin-top: 7px;">
-       <div class="form-group ">
-         <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
-           <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
-         </select>
+
        </div>
-      </div>
+       <div class="col-sm-1" style=" margin-top: 7px;">
+         <label for="sel1" class="control-label" style="margin-top: 6px;">Select Event:</label>
+       </div>
+       <div class="col-sm-3" style=" margin-top: 7px;">
+         <div class="form-group ">
+           <select [(ngModel)]='eventsData' (click)="selectEvent()" class="form-control "> select event
+             <option *ngFor="let data of Events" [ngValue]="data.id">{{data.name}}</option>
+           </select>
+         </div>
        </div>
      </div>
    </div>
- 
-
-
- <div *ngIf="showAll">
-   <ngx-gallery [options]="galleryOptionsAll" [images]="allevents"></ngx-gallery>
  </div>
 
- <div *ngIf="showEventOne">
 
-   <ngx-gallery [options]="galleryOptions" [images]="event1"></ngx-gallery>
+ <div class="container-fluid">
+   <div *ngIf="showAll">
+     <ngx-gallery [options]="galleryOptionsAll" [images]="allevents"></ngx-gallery>
+   </div>
+
+   <div *ngIf="showEventOne">
+
+     <ngx-gallery [options]="galleryOptions" [images]="event1"></ngx-gallery>
+   </div>
+
+   <div *ngIf="showEventTwo">
+     <h1></h1>
+     <ngx-gallery [options]="galleryOptions" [images]="event2"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventThree">
+     <h1></h1>
+     <ngx-gallery [options]="galleryOptions" [images]="event3"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventFour">
+     <h1></h1>
+     <ngx-gallery [options]="galleryOptions" [images]="event4"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventFive">
+     <ngx-gallery [options]="galleryOptions" [images]="event5"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventSix">
+     <h1></h1>
+     <ngx-gallery [options]="galleryOptions" [images]="event6"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventSeven">
+     <ngx-gallery [options]="galleryOptions" [images]="event7"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventEight">
+     <ngx-gallery [options]="galleryOptions" [images]="event8"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventNine">
+     <ngx-gallery [options]="galleryOptions" [images]="event9"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventTen">
+     <ngx-gallery [options]="galleryOptions" [images]="event10"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventEleven">
+     <ngx-gallery [options]="galleryOptions" [images]="event11"></ngx-gallery>
+   </div>
+   <div *ngIf="showEventtwelve">
+     <ngx-gallery [options]="galleryOptions" [images]="event12"></ngx-gallery>
+   </div>
  </div>
 
- <div *ngIf="showEventTwo">
-   <h1></h1>
-   <ngx-gallery [options]="galleryOptions" [images]="event2"></ngx-gallery>
- </div>
- <div *ngIf="showEventThree">
-   <h1></h1>
-   <ngx-gallery [options]="galleryOptions" [images]="event3"></ngx-gallery>
- </div>
- <div *ngIf="showEventFour">
-   <h1></h1>
-   <ngx-gallery [options]="galleryOptions" [images]="event4"></ngx-gallery>
- </div>
- <div *ngIf="showEventFive">
-   <ngx-gallery [options]="galleryOptions" [images]="event5"></ngx-gallery>
- </div>
- <div *ngIf="showEventSix">
-   <h1></h1>
-   <ngx-gallery [options]="galleryOptions" [images]="event6"></ngx-gallery>
- </div>
- <div *ngIf="showEventSeven">
-   <ngx-gallery [options]="galleryOptions" [images]="event7"></ngx-gallery>
- </div>
- <div *ngIf="showEventEight">
-   <ngx-gallery [options]="galleryOptions" [images]="event8"></ngx-gallery>
- </div>
- <div *ngIf="showEventNine">
-   <ngx-gallery [options]="galleryOptions" [images]="event9"></ngx-gallery>
- </div>
- <div *ngIf="showEventTen">
-   <ngx-gallery [options]="galleryOptions" [images]="event10"></ngx-gallery>
- </div>
- <div *ngIf="showEventEleven">
-   <ngx-gallery [options]="galleryOptions" [images]="event11"></ngx-gallery>
- </div>
- <div *ngIf="showEventtwelve">
-   <ngx-gallery [options]="galleryOptions" [images]="event12"></ngx-gallery>
- </div>
  <!-- <div class="container">
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="showall" role="tabpanel" aria-labelledby="showall-tab">

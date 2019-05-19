@@ -365,7 +365,7 @@ ngOnInit(): void {
     // max-width 400
     {
       breakpoint: 400,
-      preview: false
+      preview: true
     }
   ];
   this.galleryOptionsAll = [
@@ -392,7 +392,7 @@ ngOnInit(): void {
     // max-width 400
     {
       breakpoint: 400,
-      preview: false
+      preview: true
     }
   ];
 

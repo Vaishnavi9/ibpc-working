@@ -130,6 +130,7 @@ export class GoverningCouncilComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.filesScale1);
+    window.scrollTo(0, 0);
   }
 
 }

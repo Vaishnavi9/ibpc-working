@@ -22,6 +22,7 @@ import { IndividualFormComponent } from './components/individual-form/individual
 import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
 import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { NgxGalleryModule } from 'ngx-gallery';
     AppRoutingModule,
     FormsModule,
     NgxGalleryModule,
+    ReactiveFormsModule
   ],
   providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

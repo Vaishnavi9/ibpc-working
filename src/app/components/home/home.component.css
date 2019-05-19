@@ -30,16 +30,15 @@ top:10px;
 .mask1{
     background-image: url("assets/img/slider/1.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y:40%;
+    background-size: 100%;
+    background-position-y:35%;
     height: 80vh;
     width: auto;
-    
 }
 .mask2{
     background-image: url("assets/img/slider/2.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;    
     height: 80vh;
     width: auto;
@@ -47,7 +46,7 @@ top:10px;
 .mask3{
     background-image: url("assets/img/slider/3.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;    
     height: 80vh;
     font-weight:700;
@@ -56,7 +55,7 @@ top:10px;
 .mask4{
     background-image: url("assets/img/slider/4.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;    
     height: 80vh;
     font-weight:700;
@@ -72,3 +71,17 @@ top:10px;
     padding:15px;
     background: rgba(0, 0, 0, 0.5)
 }
+@media screen and (max-width: 450px) {
+    .mask1{
+        height: 40vh;
+    }
+    .mask2{
+        height: 40vh;
+    }
+    .mask3{
+        height: 40vh;
+    }
+    .mask4{
+        height: 40vh;
+    }
+  }

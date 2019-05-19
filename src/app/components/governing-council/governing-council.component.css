@@ -106,4 +106,13 @@ body {
     transform: scale(1.1) rotate(180deg);
     background: #00d1b2;
 }
+.mask1{
+    background-image: url("assets/img/header/governingCouncil.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.copule{
+    background: rgba(0, 0, 0, 0.5);
+}
 

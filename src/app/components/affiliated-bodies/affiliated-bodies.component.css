@@ -4,6 +4,15 @@
     background: -moz-linear-gradient(left, #000, blue);
     background: linear-gradient(to left, #000000c9, #dda928);
 }
+.mask1{
+    background-image: url("assets/img/header/affiliatedBodies.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+.copule{
+    background: rgba(0, 0, 0, 0.5);
+}
 
 
 

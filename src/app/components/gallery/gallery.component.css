@@ -142,3 +142,12 @@ span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-ceil {
 .eventheaderSection {
   padding-top: 20px;
 }
+.mask1{
+  background-image: url("assets/img/header/gallery.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+.copule{
+  background: rgba(0, 0, 0, 0.5);
+}

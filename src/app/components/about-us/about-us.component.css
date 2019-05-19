@@ -36,6 +36,18 @@
     width: 65%;
     height: 100%;
 }
+.mask1{
+    background-image: url("assets/img/header/aboutUs.PNG");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y:40%;
+    background-position-x:center;
+    
+}
+.copule{
+    background: rgba(0, 0, 0, 0.5);
+    width:100%;
+}
 
 #client {
     padding-bottom: 100px;

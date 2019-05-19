@@ -75,3 +75,12 @@
     width: 70px;
     border-radius: 4px;
 }
+.mask1{
+    background-image: url("assets/img/header/news.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: center;
+}
+.copule{
+    background: rgba(0, 0, 0, 0.5);
+}

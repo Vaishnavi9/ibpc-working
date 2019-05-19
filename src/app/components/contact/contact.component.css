@@ -102,6 +102,16 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+.mask1{
+    background-image: url("assets/img/header/contactUs.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+  }
+  .copule{
+    background: rgba(0, 0, 0, 0.5);
+  }
 
 /* .container {
   border-radius: 5px;

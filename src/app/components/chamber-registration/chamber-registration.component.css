@@ -10,3 +10,12 @@
     margin-bottom: 20px;
     border-radius: 5px;
 }
+.mask1{
+    background-image: url("assets/img/header/chamberReg.PNG");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center; 
+}
+.copule{
+    background: rgba(0, 0, 0, 0.5);
+}

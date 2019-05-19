@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
   form = new FormGroup({
     username: new FormControl('', [Validators.required,

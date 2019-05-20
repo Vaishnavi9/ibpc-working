@@ -9,6 +9,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  submitted = false;
 
   constructor() { }
 
@@ -31,6 +32,17 @@ export class ContactComponent implements OnInit {
 
   get message() {
     return this.form.get('message');
+  }
+
+  onSubmit() {
+    this.submitted = true;
+    console.log(this.form);
+    // stop here if form is invalid
+    if (this.form.invalid) {
+      return;
+    }
+
+    alert('SUCCESS!! :-)')
   }
 
 }

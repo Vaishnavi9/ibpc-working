@@ -35,42 +35,49 @@
       <input type="submit" value="Submit">
     </form>
 </div> -->
-<div class="container">
-  <form [formGroup]="form" style="margin:50px;">
-    <div class="form-group">
-      <label for="username">Username</label>
-      <input formControlName="username" id="username" type="text" class="form-control" style="width:50%">
-      <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
+<div class="container ">
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" style="margin:50px;">
+    <div class="form-group col-md-6 col-sm-12">
+      <label for="username">Username:</label>
+      <input formControlName="username" id="username" type="text" class="form-control">
+      <div *ngIf="(username.touched && username.invalid )|| submitted" class="alert alert-danger">
         <div *ngIf="username.errors.required">Username is
           Required!
         </div>
         <div *ngIf="username.errors.minlength">Username should be min {{username.errors.minlength.requiredLength}}
           characters!
         </div>
-    
+
       </div>
     </div>
-    <div class="form-group">
-      <label for="email_nme">Email</label>
-      <input formControlName="email_name" id="email_name" type="text" class="form-control" style="width:50%">
-      <div *ngIf="email_name.touched && email_name.invalid" class="alert alert-danger">
+    <div class="form-group col-md-6 col-sm-12">
+      <label for="email_nme">Email:</label>
+      <input formControlName="email_name" id="email_name" type="text" class="form-control">
+      <div *ngIf="(email_name.touched && email_name.invalid) || submitted" class="alert alert-danger">
         <div *ngIf="email_name.errors.required">Email is
           Required!
         </div>
         <div *ngIf="email_name.errors.email">Email must be a valid email address</div>
         <!-- <div *ngIf="email.errors.cannotContainSpace">Email cannot contain space!
-        </div> -->
+              </div> -->
       </div>
     </div>
-    <div class="form-group">
-      <label for="message">Message</label>
+    <div class="form-group col-md-6 col-sm-12">
+      <label for="message">Message:</label>
       <textarea formControlName="message" id="message" type="text" class="form-control"> </textarea>
-      <div *ngIf="message.touched && message.invalid" class="alert alert-danger">
+      <div *ngIf="(message.touched && message.invalid )|| submitted" class="alert alert-danger">
         <div *ngIf="message.errors.required">Message is
           Required!
         </div>
       </div>
     </div>
-    <button class="btn btn-primary" type="submit">Send Message</button>
+    <div class="col-md-2">
+      <button [disabled]="loading" class="btn btn-primary" type="submit">Send Message</button>
+    </div>
+
   </form>
+
+
+
 </div>

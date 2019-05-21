@@ -63,12 +63,12 @@ export class GoverningCouncilComponent implements OnInit {
     // {img:"assets/img/governing-council/vsTreasurer.jpg"},
     {
     img:"assets/img/governing-council/vsTreasurer.jpg",
-    name:"Mr. Firoz Kachwala",
+    name:"Mr. Brijesh Joshi",
     position:"Hon. Jt Treasurer",
-    post:"Director",
-    company:"Future Architectural Glass LLC",
-    contact:"055- 7761536 / 050-7475473",
-    email:" firoz@faglass.com"
+    // post:"Director",
+    // company:"Future Architectural Glass LLC",
+    contact:"050-2778419/ 055-5368419",
+    email:"brijesh.j@gmail.com"
     },
 
     // {img:"assets/img/governing-council/member1.jpg"},
@@ -86,12 +86,12 @@ export class GoverningCouncilComponent implements OnInit {
     // {img:"assets/img/governing-council/member2.jpg"},
     {
     img:"assets/img/governing-council/member2.jpg",
-    name:"Bank of Baroda  ",
+    name:"Mrs. Sakina I. Safdari",
     position:"Hon. Member",
-    post:"Senior Manage",
-    company:"RAK",
-    contact:"055-1783585/07-2269041",
-    email:"rajeevsreeragam@gmail.com"
+    // post:"Senior Manage",
+    // company:"RAK",
+    contact:"050-4956554",
+    email:"sis@saftech.ae"
     },
     // {img:"assets/img/governing-council/member3.jpg"},
     // {
@@ -124,6 +124,15 @@ export class GoverningCouncilComponent implements OnInit {
     contact:"050-6476642/ 07-2227970",
     email:"groupofjazaa@gmail.com"
     },
+    {
+      img:"assets/img/governing-council/member6.jpg",
+      name:"Shiv Shankar Kumar Sharma",
+      position:"Hon. Member",
+      // post:"MD",
+      // company:"Al Jazaa Electrical & Sanitary ",
+      contact:"050-3568071",
+      email:"SHIVSHANKER09876@yahoo.co.in"
+      },
   ];
 
   constructor() { }

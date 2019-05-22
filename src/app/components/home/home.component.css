@@ -71,7 +71,7 @@ top:10px;
     padding:15px;
     background: rgba(0, 0, 0, 0.5)
 }
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
     .mask1{
         height: 40vh;
     }
@@ -83,5 +83,10 @@ top:10px;
     }
     .mask4{
         height: 40vh;
+    }
+  } */
+  @media screen and (max-width: 1060px) {
+    .mask1,.mask2,.mask3,.mask4{
+        height: 50vw;
     }
   }

@@ -103,7 +103,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 .mask1{
-    background-image: url("assets/img/header/contactUs.PNG");
+    background-image: url("assets/img/header/contactUs.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 

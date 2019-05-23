@@ -67,7 +67,7 @@ export class GoverningCouncilComponent implements OnInit {
     position:"Hon. Jt Treasurer",
     // post:"Director",
     // company:"Future Architectural Glass LLC",
-    contact:"050-2778419/ 055-5368419",
+    contact:"050-2778419",
     email:"brijesh.j@gmail.com"
     },
 

@@ -21,7 +21,9 @@ import { GoverningCouncilComponent } from './components/governing-council/govern
 import { IndividualFormComponent } from './components/individual-form/individual-form.component';
 import { CorporateFormComponent } from './components/corporate-form/corporate-form.component';
 import { HashLocationStrategy, Location, LocationStrategy } from '@angular/common';
+
 import { NgxGalleryModule } from 'ngx-gallery';
+
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -49,7 +51,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     NgxGalleryModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+    
   ],
   providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

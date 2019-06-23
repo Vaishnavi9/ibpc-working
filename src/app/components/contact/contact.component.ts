@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
+import * as emailjs from 'emailjs-com';
 
 
 @Component({
@@ -11,10 +12,27 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
   submitted = false;
 
-  constructor() { }
+  constructor() { 
+    emailjs.init('user_bkkSp1qao3JnenIgE2Cud');
+
+  //   var template_params = {
+  //     "reply_to": "hii",
+  //     "from_name": "reshab24vai@gmail.com",
+  //     "to_name": "nitiwadji149@gmail.com",
+  //     "message_html": "i really need you "
+  //  }
+
+  //   emailjs.send('gmail','template_NJN8vhwC',template_params)
+  //   .then((response) => {
+  //      console.log('SUCCESS!', response.status, response.text);
+  //   }, (err) => {
+  //      console.log('FAILED...', err);
+  //   });
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);
+    '#myForm'
   }
   form = new FormGroup({
     username: new FormControl('', [Validators.required,
@@ -41,6 +59,19 @@ export class ContactComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
+      var template_params = {
+      "reply_to": "hii",
+      "from_name": this.form.value.email_name,
+      "to_name": "info@ibpcrakuae.com",
+      "message_html": this.form.value.message
+   }
+
+    emailjs.send('gmail','template_NJN8vhwC',template_params)
+    .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+    }, (err) => {
+       console.log('FAILED...', err);
+    });
 
     alert('SUCCESS!! :-)')
   }

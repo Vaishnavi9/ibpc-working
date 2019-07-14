@@ -1,8 +1,8 @@
 .carousel-inner {
-    background: -webkit-linear-gradient(left, #000, #e0ac20);
+    /* background: -webkit-linear-gradient(left, #000, #e0ac20);
     background: -o-linear-gradient(left, #000, blue);
     background: -moz-linear-gradient(left, #000, blue);
-    background: linear-gradient(to left, #000000c9, #dda928);
+    background: linear-gradient(to left, #000000c9, #dda928); */
 }
 
 body {
@@ -106,13 +106,34 @@ body {
     transform: scale(1.1) rotate(180deg);
     background: #00d1b2;
 }
-.mask1{
-    background-image: url("assets/img/header/governingCouncil.PNG");
+.carousel-inner{
+    background-image: url("assets/img/header/slider8.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center; 
 }
 .copule{
     background: rgba(0, 0, 0, 0.5);
+}
+.banner-text{
+    padding: 100px 0px;
+}
+@media screen and (max-width: 1060px) {
+    .banner-text{
+    padding: 40px 0px;
+    /* display: none; */
+    } 
+}
+
+@media screen and (max-width: 560px) {
+    .banner-text{
+    padding: 0px 0px;
+    }
+    .banner-inner{
+    display: none;
+    }
+    .banner-text p{
+        margin-bottom: 0px !important
+    }
 }
 

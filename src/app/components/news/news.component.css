@@ -75,12 +75,29 @@
     width: 70px;
     border-radius: 4px;
 }
-.mask1{
+.carousel-inner {
     background-image: url("assets/img/header/news.PNG");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-size: center;
 }
 .copule{
     background: rgba(0, 0, 0, 0.5);
 }
+.banner-text{
+    padding: 100px 0px;
+}
+@media screen and (max-width: 1060px) {
+    .banner-text{
+    padding: 70px 0px;
+    } 
+}
+@media screen and (max-width: 720px) {
+    .banner-text{
+    padding: 40px 0px;
+    } 
+}
+@media screen and (max-width: 560px) {
+    .banner-text{
+    padding: 10px 0px;
+    }}

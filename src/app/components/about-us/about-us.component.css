@@ -10,12 +10,12 @@
 .down-arrow{
     margin-bottom: -49px;
 }
-.carousel-inner {
+/* .carousel-inner {
     background: -webkit-linear-gradient(left, #000, #e0ac20);
     background: -o-linear-gradient(left, #000, blue);
     background: -moz-linear-gradient(left, #000, blue);
     background: linear-gradient(to left, #000000c9, #dda928);
-}
+} */
 
 .accord-paster{
     background: -webkit-linear-gradient(left, #000, #e0ac20);
@@ -36,14 +36,14 @@
     width: 65%;
     height: 100%;
 }
-.mask1{
+.carousel-inner{
     background-image: url("assets/img/header/aboutUs.PNG");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position-y:40%;
-    background-position-x:center;
-    
+    background-size: 100%;    
+    /* background-position-y:40%;
+    background-position-x:center; */
 }
+
 .copule{
     background: rgba(0, 0, 0, 0.5);
     width:100%;
@@ -86,4 +86,31 @@
 .btn-70{
     width: 70px;
     border-radius: 4px;
+}
+
+.banner-text{
+    padding: 40px 0px;
+}
+
+@media screen and (max-width: 1060px) {
+    .banner-text{
+    padding: 10px 0px;
+    /* display: none; */
+    }
+    .proboots{
+      margin-bottom: 0px;    
+    }   
+}
+
+@media screen and (max-width: 560px) {
+    .banner-text{
+    padding: 5px 0px;
+    }
+    .proboots{
+      margin-bottom: 0px;    
+    }
+    .banner-inner{
+    display: none;
+    }
+    
 }

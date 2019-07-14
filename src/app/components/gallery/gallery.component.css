@@ -117,12 +117,12 @@ span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-ceil {
   max-width: none;
 }
 
-.carousel-inner {
+/* .carousel-inner {
   background: -webkit-linear-gradient(left, #000, #e0ac20);
   background: -o-linear-gradient(left, #000, blue);
   background: -moz-linear-gradient(left, #000, blue);
   background: linear-gradient(to left, #000000c9, #dda928);
-}
+} */
 
 .carousel-zoom {
   position: relative;
@@ -142,12 +142,29 @@ span.ng5-slider-span.ng5-slider-bubble.ng5-slider-limit.ng5-slider-ceil {
 .eventheaderSection {
   padding-top: 20px;
 }
-.mask1{
+.carousel-inner{
   background-image: url("assets/img/header/gallery.PNG");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center; 
 }
 .copule{
   background: rgba(0, 0, 0, 0.5);
 }
+.banner-text{
+  padding: 100px 0px;
+}
+@media screen and (max-width: 1060px) {
+  .banner-text{
+  padding: 70px 0px;
+  } 
+}
+@media screen and (max-width: 720px) {
+  .banner-text{
+  padding: 40px 0px;
+  } 
+}
+@media screen and (max-width: 560px) {
+  .banner-text{
+  padding: 10px 0px;
+  }}
